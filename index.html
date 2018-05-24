@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Formulier</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<div class="container">
+  <form>
+
+  <div class="row">
+    <div class="col-25">
+      <label>Voornaam:<label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="firstname">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label>Achternaam:<label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lastname">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label>Woonplaats:<label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="city">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label>Op zoek naar:<label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lookingfor">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label>Werkervaring:<label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="workexp">
+    </div>
+  </div>
+
+  <div>
+    <div class="row">
+      <div class="col-25">
+        <label>Tijdsperiode:<label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="workexp_time">
+
+        <select id="workexp_timeunit">
+          <option value="jaar">Jaren</option>
+          <option value="maanden">Maanden</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label>Opleiding:<label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="education">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label>Eigenschappen:<label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="characteristics" placeholder="bijv. 'communicatief', 'zelfstandig', 'gedreven'">
+    </div>
+  </div>
+
+  </form>
+
+  <div>
+    <button onclick="submit()">Genereer Profiel</button>
+  </div>
+
+  <div>
+    <textarea id="demo" cols="50" rows="20"></textarea>
+  </div>
+</div>
+
+  <script src="index.js"></script>
+</body>
+</html>
